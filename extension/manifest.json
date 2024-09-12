@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Easy Block",
+  "version": "1.0.0",
+  "icons": {
+    "128": "sleaping.png",
+    "64": "hey.png",
+    "32": "shield.png"
+  },
+  "action": { "default_popup": "index.html" },
+  "permissions": ["declarativeNetRequest", "alarms"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "src/app/background.ts",
+    "type": "module"
+  }
+}
